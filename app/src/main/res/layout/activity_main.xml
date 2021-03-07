@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:padding="25dp"
+    tools:context=".MainActivity"
+    android:background="#121212"
+    android:id='@+id/mainView'>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="GPA Calculator"
+        android:textAlignment="center"
+        android:textSize="36sp"
+        android:paddingBottom="30dp"
+        android:textColor="#fafafa"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/subject1"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Subject 1"
+        android:layout_below="@id/textView"
+        android:layout_marginBottom="15dp"
+        android:textColorHint="#bdbdbd">
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Enter Subject 1's Marks" android:textColor="#fafafa" android:layout_marginTop="5dp"/>
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:maxLength="3"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/subject2"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Subject 2"
+        android:layout_below="@id/subject1"
+        android:layout_marginBottom="15dp"
+        android:textColorHint="#bdbdbd">
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Enter Subject 2's Marks" android:textColor="#fafafa" android:layout_marginTop="5dp"/>
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:maxLength="3"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/subject3"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Subject 3"
+        android:layout_below="@id/subject2"
+        android:layout_marginBottom="15dp"
+        android:textColorHint="#bdbdbd">
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Enter Subject 3's Marks" android:textColor="#fafafa" android:layout_marginTop="5dp"/>
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:maxLength="3"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/subject4"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Subject 4"
+        android:layout_below="@id/subject3"
+        android:layout_marginBottom="15dp"
+        android:textColorHint="#bdbdbd">
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Enter Subject 4's Marks" android:textColor="#fafafa" android:layout_marginTop="5dp"/>
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:maxLength="3"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/subject5"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Subject 5"
+        android:layout_below="@id/subject4"
+        android:layout_marginBottom="25dp"
+        android:textColorHint="#bdbdbd">
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Enter Subject 5's Marks" android:textColor="#fafafa" android:layout_marginTop="5dp"/>
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:maxLength="3"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:layout_below="@id/subject5"
+        android:layout_weight="1"
+        android:onClick="calculateGPA"
+        android:text="Compute GPA" />
+
+</RelativeLayout>

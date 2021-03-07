@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    tools:context=".MainActivity"
+    android:background="#121212"
+    android:id='@+id/resultView'
+    android:gravity="center"
+    android:padding="35dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:background="@drawable/background_black"
+        android:elevation="5dp"
+        android:id="@+id/scoreContainer"
+        >
+        <TextView
+            android:id="@+id/score"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:textSize="70dp"
+            android:text="93"
+            android:textColor="#fafafa"
+            android:textAlignment="center"
+            android:gravity="center_horizontal" />
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_below="@id/score"
+            android:layout_marginTop="20dp"
+            android:textColor="#fafafa"
+            android:textSize="20dp"
+            android:text="Your computed GPA"
+            android:textAlignment="center"
+            android:gravity="center_horizontal" />
+    </RelativeLayout>
+    <Button
+        android:id="@+id/button"
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:layout_below="@id/scoreContainer"
+        android:layout_weight="1"
+        android:onClick="goBack"
+        android:text="Go Back"/>
+</RelativeLayout>
